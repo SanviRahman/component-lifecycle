@@ -1,0 +1,13 @@
+<h1>Hello From Parent Component</h1>
+<div class="container">
+  <input type="text" #input>
+  <button (click)="onSubmit(input)">Submit</button>
+
+  <br><br>
+  <button (click)="updateConuter()">Count:{{counter}}</button>
+
+  <div *ngIf="counter!=5">
+     <app-demoss [value]="inputText"> </app-demoss>
+  </div>
+
+</div>
