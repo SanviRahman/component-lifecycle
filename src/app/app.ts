@@ -11,10 +11,12 @@ import { NgIf } from '@angular/common';
 export class App {
 
   inputText:string="";
+  count:number=0;
 
   onSubmit(inputEl: HTMLInputElement){
     this.inputText=inputEl.value;
   }
+
 
   counter=0;
   
